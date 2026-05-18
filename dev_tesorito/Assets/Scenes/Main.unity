@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 38599733}
   - component: {fileID: 38599735}
   - component: {fileID: 38599734}
+  - component: {fileID: 38599736}
   m_Layer: 5
   m_Name: Equipment Menu
   m_TagString: Untagged
@@ -196,6 +197,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38599732}
   m_CullTransparentMesh: 1
+--- !u!225 &38599736
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38599732}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &136507407
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +220,7 @@ GameObject:
   - component: {fileID: 136507408}
   - component: {fileID: 136507410}
   - component: {fileID: 136507409}
+  - component: {fileID: 136507411}
   m_Layer: 5
   m_Name: Equip Menu
   m_TagString: Untagged
@@ -273,6 +287,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136507407}
   m_CullTransparentMesh: 1
+--- !u!225 &136507411
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136507407}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &275024942
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,7 +768,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1001860520}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1032855121}
+        m_TargetAssemblyTypeName: MenuTransition, Assembly-CSharp
+        m_MethodName: GoToEquipmentItems
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1001860520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,6 +831,7 @@ GameObject:
   - component: {fileID: 1032855120}
   - component: {fileID: 1032855119}
   - component: {fileID: 1032855118}
+  - component: {fileID: 1032855121}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -885,6 +924,21 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1032855121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032855116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62718678f4c0c4f46b692064eece8f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuTransition
+  equipMenuCanvasGroup: {fileID: 136507411}
+  equipmentItemsCanvasGroup: {fileID: 38599736}
+  fadeDuration: 0.5
 --- !u!1 &1159596232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,7 +1569,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1954436255}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1032855121}
+        m_TargetAssemblyTypeName: MenuTransition, Assembly-CSharp
+        m_MethodName: GoBackToEquipMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1954436255
 MonoBehaviour:
   m_ObjectHideFlags: 0
