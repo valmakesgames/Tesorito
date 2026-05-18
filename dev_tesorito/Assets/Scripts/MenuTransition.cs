@@ -21,13 +21,26 @@ public class MenuTransition : MonoBehaviour
         // Fade Equipment Menu in (alpha goes to 1)
         equipmentItemsCanvasGroup.DOFade(1f, fadeDuration);
         
+        // Toggling CanvasGroup interactable and blocksRaycasts
+        equipMenuCanvasGroup.interactable = false;
+        equipMenuCanvasGroup.blocksRaycasts = false;
+        
+        equipmentItemsCanvasGroup.interactable = true;
+        equipmentItemsCanvasGroup.blocksRaycasts = true;
+        
         Debug.Log("Going to see the Equipment!");
     }
 
     public void GoBackToEquipMenu() {
         equipmentItemsCanvasGroup.DOFade(0f, fadeDuration);
-        
         equipMenuCanvasGroup.DOFade(1f, fadeDuration);
+        
+        // Toggling CanvasGroup interactable and blocksRaycasts
+        equipmentItemsCanvasGroup.interactable = false;
+        equipmentItemsCanvasGroup.blocksRaycasts = false;
+        
+        equipMenuCanvasGroup.interactable = true;
+        equipMenuCanvasGroup.blocksRaycasts = true;
         
         Debug.Log("Going back to Equip Menu");
     }
