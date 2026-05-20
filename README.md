@@ -1,6 +1,6 @@
 **WIP**
 
-![Look Dev mockup to help define the story for the Equip Menu prototype.]()
+![Look Dev mockup to help define the story for the Equip Menu prototype.](https://github.com/valmakesgames/Tesorito/blob/master/art_tesorito/look-dev_v1.png)
 
 # Tesoro
 
