@@ -855,6 +855,9 @@
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>C:\Users\val\Desktop\Projects\Game Dev\unity\Tesorito\dev_tesorito\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>C:\Users\val\Desktop\Projects\Game Dev\unity\Tesorito\dev_tesorito\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI.Analytics">
       <HintPath>C:\Users\val\Desktop\Projects\Game Dev\unity\Tesorito\dev_tesorito\Library\ScriptAssemblies\UnityEditor.UI.Analytics.dll</HintPath>
     </Reference>
