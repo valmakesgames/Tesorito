@@ -10,8 +10,10 @@ public class EquipmentItemIcon : MonoBehaviour
     [Header("Selection States")]
     [SerializeField] 
     private Image selectionRing;
+    
     [SerializeField] 
     private Color selectedColor = Color.white;
+    
     [SerializeField] 
     private Color equippedColor = Color.yellow;
 
@@ -26,8 +28,18 @@ public class EquipmentItemIcon : MonoBehaviour
     {
         // Ring starts hidden
         SetRingVisible(false);
+        
+        // Subscribe to Equipment Manager's OnEquipmentChanged event
+        EquipmentManager.Instance.OnEquipmentChanged += RefreshVisualState;
     }
 
+    private void OnDestroy() {
+        // Unsubscribe when object is destroyed
+        if(EquipmentManager.Instance != null) {
+            EquipmentManager.Instance.OnEquipmentChanged -= RefreshVisualState; 
+        }
+    }
+    
     // Called by the Button component when this icon is clicked
     public void OnIconClicked()
     {
