@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9f0148fa631f746bd9e3be6ae243ee, type: 3}
   m_Name: Locked Gloves 1
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentItem
-  itemName: 
-  description: 
-  equippedItemSprite: {fileID: 0}
+  itemName: Locked Memory
+  description: Continue your journey to unlock this memory
+  equippedItemSprite: {fileID: 21300000, guid: 355e7527e9447de4e94d3b0dac0e9707, type: 3}
   weightValue: 0
   defenseValue: 0
   isLoreOnly: 1

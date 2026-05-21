@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentItem
   itemName: Plain Gloves
   description: Simple and a bit of a tight fit.
-  equippedItemSprite: {fileID: 0}
-  weightValue: 0
-  defenseValue: 0
+  equippedItemSprite: {fileID: 21300000, guid: d424d7f6437b09b49b6ae114c086093d, type: 3}
+  weightValue: 3
+  defenseValue: 3
   isLoreOnly: 0
   isLegendary: 0
   perks:
