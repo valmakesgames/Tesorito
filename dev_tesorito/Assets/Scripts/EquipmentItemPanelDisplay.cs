@@ -6,7 +6,8 @@ using DG.Tweening;
 public class EquipmentItemPanelDisplay : MonoBehaviour
 {
     [Header("Card Reference")]
-    [SerializeField] private EquipmentItemCardDisplay cardDisplay;
+    [SerializeField] 
+    private EquipmentItemCardDisplay cardDisplay;
 
     [Header("Item Details")]
     [SerializeField] 

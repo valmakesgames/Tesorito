@@ -5,9 +5,14 @@ using TMPro;
 public class EquipmentItemCardDisplay : MonoBehaviour
 {
     [Header("Card Visuals")]
-    [SerializeField] private Image equippedItemImage;
-    [SerializeField] private TextMeshProUGUI weightValueText;
-    [SerializeField] private TextMeshProUGUI defenseValueText;
+    [SerializeField] 
+    private Image equippedItemImage;
+    
+    [SerializeField] 
+    private TextMeshProUGUI weightValueText;
+    
+    [SerializeField] 
+    private TextMeshProUGUI defenseValueText;
 
     // Exactly 3 slots for perk icons — matches our max 3 perks per item
     [SerializeField] private Image[] perkIcons = new Image[3];

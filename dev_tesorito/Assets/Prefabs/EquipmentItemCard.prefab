@@ -825,6 +825,7 @@ GameObject:
   - component: {fileID: 8640491367699553141}
   - component: {fileID: 7718043415219386428}
   - component: {fileID: 2553008026225637486}
+  - component: {fileID: 188613560199098707}
   m_Layer: 5
   m_Name: EquipmentItemCard
   m_TagString: Untagged
@@ -893,6 +894,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &188613560199098707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5107565569862442705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c9647acf906d5649994fa17fde40eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentItemCardDisplay
+  equippedItemImage: {fileID: 3369351404825303433}
+  weightValueText: {fileID: 4280548290387952482}
+  defenseValueText: {fileID: 2081100188604089666}
+  perkIcons:
+  - {fileID: 728801861988970129}
+  - {fileID: 79384230432295715}
+  - {fileID: 3261467147354738739}
 --- !u!1 &5581248863274131309
 GameObject:
   m_ObjectHideFlags: 0
