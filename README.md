@@ -12,3 +12,5 @@ Recollect memories from the stars to bring you to your once human form again. So
 
 ## Equip Menu Prototype
 On your journey you will encounter some of your old memories, each unlocking an article of equipment.
+
+![Equip Menu mockup to help define the story for the Equip Menu prototype.](https://github.com/valmakesgames/Tesorito/blob/master/art_tesorito/equip-menu_mockup_v1.png)
