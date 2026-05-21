@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9f0148fa631f746bd9e3be6ae243ee, type: 3}
+  m_Name: Legendary Pants
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentItem
+  itemName: Legendary Pants
+  description: There's no telling what these pants can't do. They are legendary pants!
+  equippedItemSprite: {fileID: 21300000, guid: e85a05e8b6b75ab47a3fc5fe00095514, type: 3}
+  weightValue: 9
+  defenseValue: 12
+  isLoreOnly: 0
+  isLegendary: 1
+  perks:
+  - perkIcon: {fileID: 21300000, guid: c89c15591ddaf01468bc8b778aa8138c, type: 3}
+    perkName: Magic Bonus Plus
+    perkDescription: Multiplies magic power
+  - perkIcon: {fileID: 21300000, guid: 26cc225032764bd4d93f6e30e801b9df, type: 3}
+    perkName: Magic Bonus
+    perkDescription: Increases Magic
+  - perkIcon: {fileID: 21300000, guid: 37f6fbda9f19f5245a3d8b8a353e3165, type: 3}
+    perkName: Damage Resist
+    perkDescription: Reduces attack damage
