@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9f0148fa631f746bd9e3be6ae243ee, type: 3}
+  m_Name: Legendary Boots
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentItem
+  itemName: Legendary Boots
+  description: Are these made of concrete? They feel tough but are surprisingly light.
+  equippedItemSprite: {fileID: 21300000, guid: a560d666146017047abda67e25fa986e, type: 3}
+  weightValue: 15
+  defenseValue: 22
+  isLoreOnly: 0
+  isLegendary: 1
+  perks:
+  - perkIcon: {fileID: 21300000, guid: 37f6fbda9f19f5245a3d8b8a353e3165, type: 3}
+    perkName: Damage Resist
+    perkDescription: Reduce attack damage
+  - perkIcon: {fileID: 21300000, guid: 4d065b3bc9c262446929e10089227d45, type: 3}
+    perkName: Fire Shell
+    perkDescription: Kick back fire attacks
+  - perkIcon: {fileID: 0}
+    perkName: 
+    perkDescription: 
