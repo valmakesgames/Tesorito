@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EquipmentItem : MonoBehaviour
+public class EquipmentItem : ScriptableObject
 {
-    
+    // Scriptable Object to make equipment items
 }
