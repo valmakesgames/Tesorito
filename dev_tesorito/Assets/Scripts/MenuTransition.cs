@@ -3,46 +3,86 @@ using DG.Tweening;
 
 public class MenuTransition : MonoBehaviour
 {
-    // CanvasGroup menu references
+    [Header("Main Equip Menu Panel")]
     [SerializeField] 
-    CanvasGroup equipMenuCanvasGroup;
-    [SerializeField]
-    CanvasGroup equipmentItemsCanvasGroup;
+    private CanvasGroup equipMenuPanel;
 
-    // Fade animation duration
-    [SerializeField] 
-    float fadeDuration = 0.5f;
+    [Header("Category Screens")]
     
-    public void GoToEquipmentItems()
+    // One reference per screen category
+    [SerializeField]
+    private CanvasGroup glovesScreen;
+    
+    [SerializeField]
+    private CanvasGroup hatsScreen;
+    
+    [SerializeField]
+    private CanvasGroup shirtsScreen;
+    
+    [SerializeField]
+    private CanvasGroup pantsScreen;
+    
+    [SerializeField]
+    private CanvasGroup bootsScreen;
+
+    // How long the fade takes
+    [SerializeField] private float fadeDuration = 0.5f;
+
+    // Tracks which screen is currently open, fade out
+    private CanvasGroup currentScreen;
+    
+    public void OpenGlovesScreen()
     {
-        // Fade Equip Menu out (alpha goes to 0)
-        equipMenuCanvasGroup.DOFade(0f, fadeDuration);
-        
-        // Fade Equipment Menu in (alpha goes to 1)
-        equipmentItemsCanvasGroup.DOFade(1f, fadeDuration);
-        
-        // Toggling CanvasGroup interactable and blocksRaycasts
-        equipMenuCanvasGroup.interactable = false;
-        equipMenuCanvasGroup.blocksRaycasts = false;
-        
-        equipmentItemsCanvasGroup.interactable = true;
-        equipmentItemsCanvasGroup.blocksRaycasts = true;
-        
-        Debug.Log("Going to see the Equipment!");
+        OpenScreen(glovesScreen);
     }
 
-    public void GoBackToEquipMenu() {
-        equipmentItemsCanvasGroup.DOFade(0f, fadeDuration);
-        equipMenuCanvasGroup.DOFade(1f, fadeDuration);
-        
-        // Toggling CanvasGroup interactable and blocksRaycasts
-        equipmentItemsCanvasGroup.interactable = false;
-        equipmentItemsCanvasGroup.blocksRaycasts = false;
-        
-        equipMenuCanvasGroup.interactable = true;
-        equipMenuCanvasGroup.blocksRaycasts = true;
-        
-        Debug.Log("Going back to Equip Menu");
+    public void OpenHatsScreen()
+    {
+        OpenScreen(hatsScreen);
+    }
+
+    public void OpenShirtsScreen()
+    {
+        OpenScreen(shirtsScreen);
+    }
+
+    public void OpenPantsScreen()
+    {
+        OpenScreen(pantsScreen);
+    }
+
+    public void OpenBootsScreen()
+    {
+        OpenScreen(bootsScreen);
+    }
+
+    // Called by the "Back to Main Equip Menu" button in any category screen
+    public void GoBackToEquipMenu()
+    {
+        if (currentScreen != null) {
+            FadePanel(currentScreen, false);
+        }
+
+        FadePanel(equipMenuPanel, true);
+        currentScreen = null;
+    }
+
+    // Private helper — fades out the main menu and fades in the target screen
+    private void OpenScreen(CanvasGroup targetScreen)
+    {
+        FadePanel(equipMenuPanel, false);
+        FadePanel(targetScreen, true);
+
+        // Remember which screen was opened so GoBackToEquipMenu knows what to close
+        currentScreen = targetScreen;
+    }
+
+    // FadePanel helper
+    private void FadePanel(CanvasGroup panel, bool fadeIn)
+    {
+        float targetAlpha = fadeIn ? 1f : 0f;
+        panel.DOFade(targetAlpha, fadeDuration);
+        panel.interactable = fadeIn;
+        panel.blocksRaycasts = fadeIn;
     }
 }
-    

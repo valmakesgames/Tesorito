@@ -12,14 +12,17 @@ public class EquipmentItemPanelDisplay : MonoBehaviour
     [Header("Item Details")]
     [SerializeField] 
     private TextMeshProUGUI itemNameText;
+    
     [SerializeField] 
     private TextMeshProUGUI itemDescriptionText;
 
     [Header("Perk Rows")]
     [SerializeField] 
     private Image[] perkRowIcons = new Image[3];
+    
     [SerializeField] 
     private TextMeshProUGUI[] perkRowNames = new TextMeshProUGUI[3];
+    
     [SerializeField] 
     private TextMeshProUGUI[] perkRowDescriptions = new TextMeshProUGUI[3];
 

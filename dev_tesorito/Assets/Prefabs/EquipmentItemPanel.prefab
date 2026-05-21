@@ -161,17 +161,17 @@ MonoBehaviour:
   itemNameText: {fileID: 1576763777073991642}
   itemDescriptionText: {fileID: 8545687262758762030}
   perkRowIcons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 690936233020295574}
+  - {fileID: 8999579289182535180}
+  - {fileID: 825856628818816906}
   perkRowNames:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2288023360191193714}
+  - {fileID: 3803560146517726630}
+  - {fileID: 3903653353190230988}
   perkRowDescriptions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 812103404415548020}
+  - {fileID: 522562805422543530}
+  - {fileID: 5733493938306844757}
   equipButtonText: {fileID: 2341878751753762723}
   legendaryWarningText: {fileID: 6309114355511632175}
   loreBlurbText: {fileID: 3229533540298969751}
