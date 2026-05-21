@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9f0148fa631f746bd9e3be6ae243ee, type: 3}
   m_Name: Plain Gloves
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentItem
-  itemName: 
-  description: 
+  itemName: Plain Gloves
+  description: Simple and a bit of a tight fit.
   equippedItemSprite: {fileID: 0}
   weightValue: 0
   defenseValue: 0
