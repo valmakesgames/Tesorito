@@ -23,9 +23,3 @@ MonoBehaviour:
   - perkIcon: {fileID: 21300000, guid: 26cc225032764bd4d93f6e30e801b9df, type: 3}
     perkName: Magic Defense
     perkDescription: Protects against Enchantments
-  - perkIcon: {fileID: 0}
-    perkName: 
-    perkDescription: 
-  - perkIcon: {fileID: 0}
-    perkName: 
-    perkDescription: 
