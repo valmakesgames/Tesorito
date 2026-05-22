@@ -531,6 +531,7 @@ GameObject:
   - component: {fileID: 203437980}
   - component: {fileID: 203437982}
   - component: {fileID: 203437981}
+  - component: {fileID: 203437983}
   m_Layer: 5
   m_Name: Gloves Equipment Menu
   m_TagString: Untagged
@@ -602,6 +603,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203437979}
   m_CullTransparentMesh: 1
+--- !u!225 &203437983
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203437979}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &280474020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1341,6 +1354,7 @@ GameObject:
   - component: {fileID: 449163242}
   - component: {fileID: 449163244}
   - component: {fileID: 449163243}
+  - component: {fileID: 449163245}
   m_Layer: 5
   m_Name: 'Pants Equipment Menu '
   m_TagString: Untagged
@@ -1412,6 +1426,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449163241}
   m_CullTransparentMesh: 1
+--- !u!225 &449163245
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449163241}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &456699365
 GameObject:
   m_ObjectHideFlags: 0
@@ -4700,6 +4726,7 @@ GameObject:
   - component: {fileID: 993132389}
   - component: {fileID: 993132391}
   - component: {fileID: 993132390}
+  - component: {fileID: 993132392}
   m_Layer: 5
   m_Name: Shoes Equipment Menu
   m_TagString: Untagged
@@ -4771,6 +4798,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993132388}
   m_CullTransparentMesh: 1
+--- !u!225 &993132392
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993132388}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &995584948
 GameObject:
   m_ObjectHideFlags: 0
@@ -11921,6 +11960,7 @@ GameObject:
   - component: {fileID: 1935547307}
   - component: {fileID: 1935547309}
   - component: {fileID: 1935547308}
+  - component: {fileID: 1935547310}
   m_Layer: 5
   m_Name: Shirts Equipment Menu
   m_TagString: Untagged
@@ -11992,6 +12032,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935547306}
   m_CullTransparentMesh: 1
+--- !u!225 &1935547310
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935547306}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1984259292
 GameObject:
   m_ObjectHideFlags: 0
@@ -12821,6 +12873,7 @@ GameObject:
   - component: {fileID: 2103073186}
   - component: {fileID: 2103073188}
   - component: {fileID: 2103073187}
+  - component: {fileID: 2103073189}
   m_Layer: 5
   m_Name: Hats Equipment Menu
   m_TagString: Untagged
@@ -12892,6 +12945,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103073185}
   m_CullTransparentMesh: 1
+--- !u!225 &2103073189
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103073185}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &2139662039 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 446533995211582894, guid: 1e0adc6275962884cb1e2a4a14c90bc6, type: 3}
