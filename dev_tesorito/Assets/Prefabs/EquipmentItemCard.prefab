@@ -826,6 +826,7 @@ GameObject:
   - component: {fileID: 7718043415219386428}
   - component: {fileID: 2553008026225637486}
   - component: {fileID: 188613560199098707}
+  - component: {fileID: -6732794192484189595}
   m_Layer: 5
   m_Name: EquipmentItemCard
   m_TagString: Untagged
@@ -913,6 +914,27 @@ MonoBehaviour:
   - {fileID: 728801861988970129}
   - {fileID: 79384230432295715}
   - {fileID: 3261467147354738739}
+--- !u!114 &-6732794192484189595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5107565569862442705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ea54951b7cddf41a68642517995242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipMenuSlotDisplay
+  slot: 4
+  equippedItemImage: {fileID: 3369351404825303433}
+  weightValueText: {fileID: 4280548290387952482}
+  defenseValueText: {fileID: 2081100188604089666}
+  perkIcons:
+  - {fileID: 728801861988970129}
+  - {fileID: 79384230432295715}
+  - {fileID: 3261467147354738739}
+  placeholderSprite: {fileID: 21300000, guid: 42c9867a67d0661499bc8a2d5be4ea0b, type: 3}
 --- !u!1 &5581248863274131309
 GameObject:
   m_ObjectHideFlags: 0
