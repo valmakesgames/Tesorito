@@ -2973,6 +2973,11 @@ MonoBehaviour:
   equippedGloves: {fileID: 0}
   equippedPants: {fileID: 0}
   equippedBoots: {fileID: 0}
+  defaultHat: {fileID: 11400000, guid: b1e36a1c0a74d944789731435650a3a9, type: 2}
+  defaultShirt: {fileID: 11400000, guid: b037807929b53a24c82cef0985a4c87d, type: 2}
+  defaultGloves: {fileID: 11400000, guid: ebf9c8e5f2870494ebeaffa95d82078b, type: 2}
+  defaultPants: {fileID: 11400000, guid: 854a90244ff2c32409db53b67fc00a98, type: 2}
+  defaultBoots: {fileID: 11400000, guid: a90ef16c8c4fda2448601eda93b8c3ec, type: 2}
   totalWeight: 0
   maxWeight: 70
 --- !u!4 &720571383
@@ -7720,6 +7725,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7433683126884626788, guid: 1e0adc6275962884cb1e2a4a14c90bc6, type: 3}
+      propertyPath: slot
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7761550425345816310, guid: 1e0adc6275962884cb1e2a4a14c90bc6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -8455,6 +8464,10 @@ PrefabInstance:
     - target: {fileID: 7388617148717093435, guid: 1e0adc6275962884cb1e2a4a14c90bc6, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433683126884626788, guid: 1e0adc6275962884cb1e2a4a14c90bc6, type: 3}
+      propertyPath: slot
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7761550425345816310, guid: 1e0adc6275962884cb1e2a4a14c90bc6, type: 3}
       propertyPath: m_AnchorMax.y
@@ -10446,6 +10459,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7433683126884626788, guid: 1e0adc6275962884cb1e2a4a14c90bc6, type: 3}
+      propertyPath: slot
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7761550425345816310, guid: 1e0adc6275962884cb1e2a4a14c90bc6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -12350,6 +12367,10 @@ PrefabInstance:
     - target: {fileID: 7388617148717093435, guid: 1e0adc6275962884cb1e2a4a14c90bc6, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433683126884626788, guid: 1e0adc6275962884cb1e2a4a14c90bc6, type: 3}
+      propertyPath: slot
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7761550425345816310, guid: 1e0adc6275962884cb1e2a4a14c90bc6, type: 3}
       propertyPath: m_AnchorMax.y
