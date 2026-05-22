@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentItem
   itemName: Legendary Gloves
   description: You couldn't believe you actually found these.
-  equippedItemSprite: {fileID: 0}
+  equippedItemSprite: {fileID: 21300000, guid: 3d93897b170709a4886bfbb6695df1d5, type: 3}
   weightValue: 10
   defenseValue: 12
   isLoreOnly: 0
@@ -22,10 +22,10 @@ MonoBehaviour:
   perks:
   - perkIcon: {fileID: 21300000, guid: c89c15591ddaf01468bc8b778aa8138c, type: 3}
     perkName: Magic Defense
-    perkDescription: 
+    perkDescription: Protects against magic
   - perkIcon: {fileID: 21300000, guid: 26cc225032764bd4d93f6e30e801b9df, type: 3}
     perkName: Amplify Magic
-    perkDescription: 
+    perkDescription: Protects against magic attacks
   - perkIcon: {fileID: 21300000, guid: 37f6fbda9f19f5245a3d8b8a353e3165, type: 3}
     perkName: Damage Resist
-    perkDescription: 
+    perkDescription: Protects against attacks
