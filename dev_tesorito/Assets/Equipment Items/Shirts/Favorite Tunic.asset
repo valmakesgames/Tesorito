@@ -12,20 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9f0148fa631f746bd9e3be6ae243ee, type: 3}
   m_Name: Favorite Tunic
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentItem
-  itemName: 
-  description: 
-  equippedItemSprite: {fileID: 0}
-  weightValue: 0
-  defenseValue: 0
+  itemName: Favorite Tunic
+  description: This is your most favorite tunic you just remembered.
+  equippedItemSprite: {fileID: 21300000, guid: 093c63cf94e0f5a4991009c12edbd7e3, type: 3}
+  weightValue: 3
+  defenseValue: 4
   isLoreOnly: 0
   isLegendary: 0
   perks:
-  - perkIcon: {fileID: 0}
-    perkName: 
-    perkDescription: 
-  - perkIcon: {fileID: 0}
-    perkName: 
-    perkDescription: 
-  - perkIcon: {fileID: 0}
-    perkName: 
-    perkDescription: 
+  - perkIcon: {fileID: 21300000, guid: 26cc225032764bd4d93f6e30e801b9df, type: 3}
+    perkName: Magic Defense
+    perkDescription: Protects against magic attacks
