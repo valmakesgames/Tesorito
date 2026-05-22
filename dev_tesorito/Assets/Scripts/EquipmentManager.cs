@@ -3,12 +3,25 @@ using UnityEngine;
 public class EquipmentManager : MonoBehaviour
 {
     public static EquipmentManager Instance;
-
+    
+    // These get filled at runtime. Adding [HideInInspector] to reduce clutter in Hierarchy
+    [HideInInspector]
     public EquipmentItem equippedHat;
+    [HideInInspector]
     public EquipmentItem equippedShirt;
+    [HideInInspector]
     public EquipmentItem equippedGloves;
+    [HideInInspector]
     public EquipmentItem equippedPants;
+    [HideInInspector]
     public EquipmentItem equippedBoots;
+    
+    [Header("Default Items")]
+    [SerializeField] private EquipmentItem defaultHat;
+    [SerializeField] private EquipmentItem defaultShirt;
+    [SerializeField] private EquipmentItem defaultGloves;
+    [SerializeField] private EquipmentItem defaultPants;
+    [SerializeField] private EquipmentItem defaultBoots;
 
     public float totalWeight;
     public float maxWeight = 70f;
@@ -19,6 +32,26 @@ public class EquipmentManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        
+        if (defaultHat != null) {
+            TryEquipItem(EquipmentSlot.Hat, defaultHat);
+        }
+
+        if (defaultShirt != null) {
+            TryEquipItem(EquipmentSlot.Shirt, defaultShirt);
+        }
+
+        if (defaultGloves != null) {
+            TryEquipItem(EquipmentSlot.Gloves, defaultGloves);
+        }
+
+        if (defaultPants != null) {
+            TryEquipItem(EquipmentSlot.Pants, defaultPants);
+        }
+
+        if (defaultBoots != null) {
+            TryEquipItem(EquipmentSlot.Boots, defaultBoots);
+        }
     }
 
     public EquipmentItem GetEquippedItem(EquipmentSlot slot)
