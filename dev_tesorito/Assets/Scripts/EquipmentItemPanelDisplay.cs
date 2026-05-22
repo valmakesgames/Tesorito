@@ -42,6 +42,7 @@ public class EquipmentItemPanelDisplay : MonoBehaviour
     [SerializeField] 
     private GameObject equippableContent;
 
+    private EquipmentItemIcon currentlySelectedIcon;
     private EquipmentItem currentItem;
     private EquipmentSlot currentSlot;
 
@@ -74,8 +75,16 @@ public class EquipmentItemPanelDisplay : MonoBehaviour
             EquipmentManager.Instance.OnLegendaryBlocked -= ShowLegendaryWarning;
     }
 
-    public void Populate(EquipmentItem item, EquipmentSlot slot)
+    public void Populate(EquipmentItem item, EquipmentSlot slot, EquipmentItemIcon clickedIcon)
     {
+        // Icon selection state, clear white selection ring
+        if (currentlySelectedIcon != null && currentlySelectedIcon != clickedIcon) {
+            currentlySelectedIcon.Deselect();
+        }
+        
+        // New, currently selected icon
+        currentlySelectedIcon = clickedIcon;
+        
         currentItem = item;
         currentSlot = slot;
 
@@ -160,5 +169,10 @@ public class EquipmentItemPanelDisplay : MonoBehaviour
             .DOAnchorPos(hiddenPosition, slideDuration)
             .SetEase(Ease.InCubic)
             .OnComplete(() => gameObject.SetActive(false));
+    }
+
+    public void ClearSelection() 
+    {
+        currentlySelectedIcon = null;
     }
 }

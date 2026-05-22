@@ -51,7 +51,7 @@ public class EquipmentItemIcon : MonoBehaviour
         else {
             // Not selected — select it and show the panel with this item's data
             Select();
-            itemPanel.Populate(itemData, slot);
+            itemPanel.Populate(itemData, slot, this); // THIS SCRIPT BOBO
             itemPanel.Show();
         }
     }
