@@ -39,11 +39,8 @@ public class EquipMenuSlotDisplay : MonoBehaviour
     // It checks its own slot and updates the card accordingly.
     private void Refresh()
     {
-        Debug.Log("Refresh() called on slot: " + slot);
         // Ask the EquipmentManager what is currently in the slot
         EquipmentItem equippedItem = EquipmentManager.Instance.GetEquippedItem(slot);
-        
-        Debug.Log("Equipped item in slot " + slot + ": ");
 
         if (equippedItem != null) {
             // Something is equipped, populate the card with data
