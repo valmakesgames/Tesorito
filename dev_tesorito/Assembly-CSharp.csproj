@@ -50,6 +50,7 @@
     <Compile Include="Assets\Scripts\EquipmentItemIcon.cs" />
     <Compile Include="Assets\Scripts\EquipmentSlot.cs" />
     <Compile Include="Assets\Scripts\HelloWorld.cs" />
+    <Compile Include="Assets\Scripts\ExitPrototype.cs" />
     <Compile Include="Assets\Scripts\MenuTransition.cs" />
     <Compile Include="Assets\Scripts\WeightDisplay.cs" />
     <Compile Include="Assets\Scripts\EquipMenuSlotDisplay.cs" />
