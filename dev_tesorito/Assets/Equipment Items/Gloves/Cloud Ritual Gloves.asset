@@ -16,7 +16,7 @@ MonoBehaviour:
   description: You used these to bring the rain for the crops. Unintentionally caused
     a mild flood.
   equippedItemSprite: {fileID: 21300000, guid: 0d98112e6ef0a34449cd4fc25f661dbb, type: 3}
-  weightValue: 4
+  weightValue: 25
   defenseValue: 5
   isLoreOnly: 0
   isLegendary: 0

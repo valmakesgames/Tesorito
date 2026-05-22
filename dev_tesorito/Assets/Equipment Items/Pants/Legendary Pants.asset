@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Legendary Pants
   description: There's no telling what these pants can't do. They are legendary pants!
   equippedItemSprite: {fileID: 21300000, guid: e85a05e8b6b75ab47a3fc5fe00095514, type: 3}
-  weightValue: 9
+  weightValue: 75
   defenseValue: 12
   isLoreOnly: 0
   isLegendary: 1
